@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         git(url: 'https://github.com/marwansss/Brain-tumor-website.git', branch: 'main')
       }

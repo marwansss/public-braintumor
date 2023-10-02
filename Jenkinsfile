@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        git(url: 'https://github.com/marwansss/Brain-tumor-website.git', branch: 'main')
+        git(url: 'https://github.com/marwansss/public-braintumor.git', branch: 'main')
       }
     }
 

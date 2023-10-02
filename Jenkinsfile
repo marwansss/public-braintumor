@@ -3,12 +3,10 @@ pipeline {
   stages {
     stage('check out code') {
       steps {
-          sh'''
-          echo i am marwan
-          '''
-        
+          git(url: 'https://github.com/marwansss/public-braintumor.git', branch: 'main')        
            }
     }
     
+
   }
 }

@@ -13,7 +13,7 @@ pipeline {
       steps{
 	sh'''
 	cd /var/jenkins_home/workspace/web
-	echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin
+	docker login -u maro4299311 --password dckr_pat_UGUDR9NwsyCXj8i4EtP8I0IuUGE
 	docker pull maro4299311/radioshash:v1.0
 	docker run --name radioshash -d -p 5000:5000 maro4299311/radioshash:v1.0
 	'''

@@ -8,6 +8,7 @@ pipeline {
 	echo hello
 	cd /var/jenkins_home/workspace/web
 	pwd
+	'''
       }
     }
 

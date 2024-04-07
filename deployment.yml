@@ -6,7 +6,7 @@ metadata:
     name: radioshash
     app: radioshash-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: radioshash-app
@@ -20,5 +20,6 @@ spec:
       containers:
       - name: radioshash-container
         image: maro4299311/radioshash:v1.0
+
         ports:
         - containerPort: 5000
